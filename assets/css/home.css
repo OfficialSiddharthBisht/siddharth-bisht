@@ -377,42 +377,6 @@ html[light-mode="dark"] .github-icon{
       margin-top: 15px;
     }
   }
-  
-  /*
-  --------------------------
-     CODEFORCES MICROANIMATION
-  --------------------------
-  */
-  
-  .codeforces-icon{
-    margin-right: 6px;
-    margin-top: 6px;
-  }
-  
-  .codeforces-icon .red {
-    height:4px;
-    y:2.5px;
-    
-  }
-  .codeforces:hover .red{
-    animation: red-animation 2.5s infinite alternate;
-  }
-  
-  
-  .codeforces-icon .yellow{
-    height:5px;
-    y:1.5px;
-    
-  }
-  
-  .codeforces:hover .yellow{
-    animation: yellow-animation 2s infinite alternate-reverse;
-  }
-  
-  .codeforces:hover .blue{
-    animation: blue-animation 2s  infinite alternate;
-  }
-  
   @keyframes red-animation{
     0%{
        y:0px
@@ -600,7 +564,6 @@ a:hover {
     width:56px;
     height:56px;
   }
-
 }
 @media (min-width:520px)and (max-width:521px){
   .text{
@@ -617,5 +580,18 @@ a:hover {
 @media (min-height:822px)and (max-height:823px){
   .text{
     margin-top: 1rem;
+  }
+}
+.about-section{
+  display: flex;
+  flex-wrap: nowrap;
+}
+@media all and (max-width : 750px) {
+  .about-section h5{
+    flex-wrap: wrap;
+    font-size: small;
+  }
+  .about-svg{
+    display: none;
   }
 }
